@@ -1,0 +1,40 @@
+insee_code: "74236"
+name: "Saint-Gervais-les-Bains"
+department: "74"
+postal_codes: ["74170"]
+lat: 45.8925
+lon: 6.7112
+village_alt_m: 810
+resort:
+  name: "Evasion Mont-Blanc (Saint-Gervais / Megève / Les Contamines)"
+  top_alt_m: 2350
+  base_alt_m: 850
+  lift_drive_min: 3
+  slope_access_notes: >
+    Gondola from town center to Le Bettex; true ski-in/ski-out at Le Bettex hamlet
+    (1400m). Big linked domain (Evasion Mont-Blanc ~400km) but modest top altitude
+    (Mont Joly sector ~2350m — verify exact). Tramway du Mont-Blanc to Les Houches side.
+geneva_drive_min: 70
+ratings:
+  ski: 7          # very large linked domain, but low altitude = climate exposure
+  backcountry: 8  # Mont Blanc massif doorstep; Contamines & Miage terrain nearby
+  summer: 9       # thermal baths, TMB trailheads, Mont Blanc normal route
+  charm: 8        # genuine belle-époque thermal town, not a purpose-built resort
+  village_life: 8 # ~5.5k residents, year-round shops/schools
+  license_risk: 5 # Haute-Savoie tourist communes actively debating Le Meur tools
+license_notes: >
+  No change-of-use quota adopted as of mid-2026 — verify quarterly; commune has
+  discussed regulation of meublés. National registration (May 2026) applies.
+  Classified tourist commune: 120-day primary-residence cap can be lowered to 90.
+rental:
+  est_weekly_rate_winter_eur: 2200
+  est_weekly_rate_summer_eur: 1300
+  est_occupancy_weeks: 16
+  notes: "Strong dual season: ski + thermal baths + TMB hikers. — verify rates"
+portal_ids:
+  bienici_zone_id: null
+  pap_geo_id: null
+notes: >
+  Village at 810m but Saint-Nicolas-de-Véroce / Le Bettex sectors at 1200-1450m
+  are the interesting micro-locations (farmhouses with views).
+updated_at: "2026-07-17"

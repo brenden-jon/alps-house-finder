@@ -1,0 +1,44 @@
+insee_code: "74056"
+name: "Chamonix-Mont-Blanc"
+department: "74"
+postal_codes: ["74400"]
+lat: 45.9237
+lon: 6.8694
+village_alt_m: 1035
+resort:
+  name: "Chamonix (Brévent-Flégère, Grands Montets, Balme)"
+  top_alt_m: 3275
+  base_alt_m: 1035
+  lift_drive_min: 5
+  slope_access_notes: >
+    Separate ski areas linked by ski bus; very little true ski-in/ski-out.
+    Grands Montets (Argentière) top ~3275m glacier terrain; Aiguille du Midi 3842m
+    for Vallée Blanche (off-piste). Brévent gondola walkable from center.
+geneva_drive_min: 70
+ratings:
+  ski: 9          # legendary terrain, high altitude, but fragmented areas + busy
+  backcountry: 10 # world capital of ski mountaineering; Vallée Blanche, Argentière basin
+  summer: 10      # Mont Blanc massif hiking, alpinism, UTMB; busiest summer resort in Alps
+  charm: 7        # real historic alpine town, but heavily touristed and trafficky
+  village_life: 10 # ~9k residents, year-round economy, schools, hospital
+  license_risk: 1  # most restrictive regime in the French Alps
+license_notes: >
+  Zone tendue. Since 1 May 2025: change-of-use authorization required for renting
+  second homes as meublés de tourisme; quota of 1 authorization per natural person
+  in Chamonix & Les Houches; new PLU aims to ban new second-home construction.
+  Buying here to short-term rent is effectively blocked unless the property already
+  has rights or you make it a primary residence. Verified 2026-07.
+rental:
+  est_weekly_rate_winter_eur: 3200
+  est_weekly_rate_summer_eur: 2200
+  est_occupancy_weeks: 22
+  notes: >
+    Exceptional dual-season demand BUT license quota makes new STR effectively
+    unavailable — rental_yield must be discounted by license risk. — verify rates
+portal_ids:
+  bienici_zone_id: null
+  pap_geo_id: null
+notes: >
+  Included mainly as benchmark; license regime likely disqualifies it for this
+  project's investment goal despite perfect mountain credentials.
+updated_at: "2026-07-17"

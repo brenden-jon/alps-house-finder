@@ -1,0 +1,40 @@
+insee_code: "74080"
+name: "La Clusaz"
+department: "74"
+postal_codes: ["74220"]
+lat: 45.9045
+lon: 6.4233
+village_alt_m: 1040
+resort:
+  name: "La Clusaz (Aravis)"
+  top_alt_m: 2477
+  base_alt_m: 1040
+  lift_drive_min: 2
+  slope_access_notes: >
+    Lifts from village center; some true ski-in/ski-out on Beauregard/Crêt du Merle
+    sides. Top at Balme 2477m — the high, snow-sure sector. Linked ski bus to
+    Le Grand-Bornand (Aravis pass).
+geneva_drive_min: 55
+ratings:
+  ski: 8          # underrated large area, Balme sector excellent; weekend crowds from Annecy/Geneva
+  backcountry: 8  # Aravis chain is a renowned touring range (Combe de Grand Crêt, Trou de la Mouche)
+  summer: 8       # Aravis hiking, col des Aravis, lake Annecy 30min
+  charm: 9        # genuine village that grew into a resort; church square, year-round farming (reblochon)
+  village_life: 8 # ~1.8k residents, lively center all year
+  license_risk: 5 # Aravis communes discussing regulation; high second-home pressure — verify
+license_notes: >
+  No adopted quota/change-of-use identified as of mid-2026 — verify quarterly;
+  commune under strong second-home pressure (>70% second homes), a likely
+  candidate to use Le Meur tools eventually. National registration applies.
+rental:
+  est_weekly_rate_winter_eur: 2100
+  est_weekly_rate_summer_eur: 1100
+  est_occupancy_weeks: 15
+  notes: "Closest 'real village' big resort to Geneva; strong weekend market. — verify rates"
+portal_ids:
+  bienici_zone_id: null
+  pap_geo_id: null
+notes: >
+  Prices high (€8-10k/m²) — budget likely buys an apartment or a mazot/farmhouse
+  outside center. Consider Manigod/Saint-Jean-de-Sixt as cheaper satellites (add later).
+updated_at: "2026-07-17"

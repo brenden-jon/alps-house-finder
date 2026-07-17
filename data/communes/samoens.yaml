@@ -1,0 +1,39 @@
+insee_code: "74258"
+name: "Samoëns"
+department: "74"
+postal_codes: ["74340"]
+lat: 46.0826
+lon: 6.7266
+village_alt_m: 720
+resort:
+  name: "Grand Massif (Samoëns / Flaine / Morillon / Les Carroz / Sixt)"
+  top_alt_m: 2480
+  base_alt_m: 720
+  lift_drive_min: 3
+  slope_access_notes: >
+    Grand Massif Express gondola ~1km from village center (ski bus); top at
+    Grandes Platières (Flaine) 2480m. 265km linked domain. Snow at village level
+    unreliable (720m) but skiing is mid/high mountain.
+geneva_drive_min: 65
+ratings:
+  ski: 8          # big linked domain, good snow record in Flaine bowl
+  backcountry: 7  # Sixt-Fer-à-Cheval reserve, Tête de Bostan, good touring
+  summer: 9       # Cirque du Fer-à-Cheval, Giffre valley, via ferrata, rafting
+  charm: 9        # historic bourg (Monument-Historique center, linden square), stone architecture
+  village_life: 8 # ~2.4k residents, year-round market town of the Giffre valley
+  license_risk: 6 # tourist commune; no quota known as of mid-2026 — verify
+license_notes: >
+  No change-of-use/quota regime identified as of mid-2026 — verify quarterly.
+  National Le Meur registration applies. Commune historically pro-tourism.
+rental:
+  est_weekly_rate_winter_eur: 1900
+  est_weekly_rate_summer_eur: 1100
+  est_occupancy_weeks: 16
+  notes: "Solid family ski + strong summer (Fer-à-Cheval). — verify rates"
+portal_ids:
+  bienici_zone_id: null
+  pap_geo_id: null
+notes: >
+  Arguably the best charm/access/price balance in Haute-Savoie; 2480m top is
+  below the 2700m climate bar though — Flaine bowl is north-facing and holds snow.
+updated_at: "2026-07-17"

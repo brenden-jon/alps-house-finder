@@ -1,0 +1,43 @@
+insee_code: "73232"
+name: "Sainte-Foy-Tarentaise"
+department: "73"
+postal_codes: ["73640"]
+lat: 45.5928
+lon: 6.8933
+village_alt_m: 1050
+resort:
+  name: "Sainte Foy Station (1550)"
+  top_alt_m: 2620
+  base_alt_m: 1550
+  lift_drive_min: 10
+  slope_access_notes: >
+    Old village (1050m) is 10min drive below the purpose-built-but-tasteful
+    station at 1550m (ski-in/ski-out there). Top Col de l'Aiguille 2620m,
+    mostly north-facing. Small area (~40km pistes) but Val d'Isère/Tignes 25min,
+    Les Arcs/La Rosière 20-30min.
+geneva_drive_min: 150
+ratings:
+  ski: 6          # small quiet area itself, but surrounded by giants (Espace Killy, Paradiski)
+  backcountry: 9  # famous freeride/touring spot (Foglietta, Monal sector); uncrowded
+  summer: 8       # Le Monal classified site, Vanoise/Rutor access, quiet authentic valleys
+  charm: 8        # stone-and-larch hamlets (Le Miroir, La Masure); station is small-scale chalet style
+  village_life: 4 # ~800 residents; very quiet off-season, few year-round services
+  license_risk: 8 # small Savoie commune, no restrictions known — verify
+license_notes: >
+  No Le Meur restrictions identified as of mid-2026 — verify quarterly.
+  National registration applies. Tarentaise communes outside the big names
+  have so far not restricted.
+rental:
+  est_weekly_rate_winter_eur: 2000
+  est_weekly_rate_summer_eur: 800
+  est_occupancy_weeks: 13
+  notes: >
+    Winter-skewed market; summer demand thin vs Haute-Savoie. Ski-in/ski-out at
+    1550 rents well to UK/NL market. — verify rates
+portal_ids:
+  bienici_zone_id: null
+  pap_geo_id: null
+notes: >
+  Tarentaise scout: tests the 2h+ drive tradeoff. Also gateway to adding
+  Villaroger, Peisey, Champagny, Bourg-Saint-Maurice later.
+updated_at: "2026-07-17"
