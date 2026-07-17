@@ -59,5 +59,49 @@ def scrape_cmd(source_codes, commune_slugs):
     conn.close()
 
 
+@main.command("trends")
+def trends_cmd():
+    """Update DVF price trends (official transaction data) for all communes."""
+    from . import trends as trends_mod
+
+    conn = dbmod.connect()
+    communes = [dict(r) for r in conn.execute("SELECT * FROM communes")]
+    n = trends_mod.update_trends(conn, communes)
+    conn.close()
+    click.echo(f"Wrote {n} trend rows (commune x year x type)")
+
+
+@main.command("score")
+def score_cmd():
+    """Recompute the 12 scoring dimensions for all active listings."""
+    from .scoring import engine
+
+    conn = dbmod.connect()
+    n = engine.score_all(conn)
+    conn.close()
+    click.echo(f"Scored {n} listings")
+
+
+@main.command("rank")
+@click.option("--top", default=20, help="Number of listings to show")
+def rank_cmd(top):
+    """Print ranked listings using default weights."""
+    from .scoring import engine
+
+    conn = dbmod.connect()
+    ranked = engine.compute_totals(conn)
+    click.echo(f"{len(ranked)} listings pass hard filters. Top {top}:\n")
+    fmt = "{:>4}  {:<5} {:<22} {:<9} {:>9} {:>9} {:>5} {:>4} {:<28}"
+    click.echo(fmt.format("#", "score", "commune", "type", "price", "all-in", "m²", "bd", "title"))
+    for i, l in enumerate(ranked[:top], 1):
+        click.echo(fmt.format(
+            i, f"{l['total_score']:.2f}", (l["commune_name"] or l["commune_name_raw"] or "?")[:22],
+            l["property_type"][:9], f"{l['price_eur']//1000}k", f"{l['all_in_eur']//1000}k",
+            int(l["area_m2"]) if l["area_m2"] else "?", l["bedrooms"] or "?",
+            (l["title"] or "")[:28],
+        ))
+    conn.close()
+
+
 if __name__ == "__main__":
     main()

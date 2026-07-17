@@ -1,0 +1,24 @@
+# Default weights (0-2). The dashboard exposes these as sliders; CLI `rank` uses these.
+weights:
+  ski_access: 1.5
+  altitude_security: 1.0
+  backcountry: 0.75
+  summer: 0.75
+  charm: 1.25
+  village_life: 1.0
+  geneva_access: 1.0
+  license_safety: 1.5
+  rental_yield: 1.25
+  price_value: 1.0
+  space_fit: 1.0
+  condition: 0.75
+
+# Hard filters applied before scoring/ranking
+filters:
+  max_all_in_eur: 900000
+  min_bedrooms: 3          # listings with unknown bedrooms are kept but flagged
+  min_area_m2: 70          # two families; listings with unknown area are kept but flagged
+  property_types: [house, chalet, farmhouse, apartment]
+  # deal-breaker text: viager = seller stays for life; leaseback residences can't
+  # be used freely by the owners
+  exclude_keywords: [viager, "bail commercial", "résidence de tourisme", "residence de tourisme", "lmnp"]
