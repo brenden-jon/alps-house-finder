@@ -1,0 +1,33 @@
+insee_code: "04006"
+name: "Allos"
+department: "04"
+postal_codes: ["04260"]
+lat: 44.2358
+lon: 6.6278
+village_alt_m: 1400
+resort:
+  name: "Espace Lumière (2600)"
+  top_alt_m: 2600
+  base_alt_m: 1800
+  lift_drive_min: 10
+geneva_drive_min: 220
+ratings:
+  ski: 7
+  backcountry: 7
+  summer: 8
+  charm: 7
+  village_life: 4
+  license_risk: 8
+license_notes: >
+  Auto-generated first pass — no Le Meur restrictions researched yet, verify.
+  National registration applies.
+rental:
+  est_weekly_rate_winter_eur: 1300
+  est_weekly_rate_summer_eur: 750
+  est_occupancy_weeks: 13
+  notes: "Val d'Allos + lake. — verify"
+portal_ids: {}
+notes: >
+  AUTO-GENERATED batch entry (2500m+ sweep). INSEE code and ratings need a
+  verification pass. Val d'Allos + lake. — verify
+updated_at: "2026-07-18"

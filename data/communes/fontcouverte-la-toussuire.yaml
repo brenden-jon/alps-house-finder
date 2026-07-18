@@ -1,0 +1,33 @@
+insee_code: "73121"
+name: "Fontcouverte-la-Toussuire"
+department: "73"
+postal_codes: ["73300"]
+lat: 45.2547
+lon: 6.2903
+village_alt_m: 1750
+resort:
+  name: "Les Sybelles"
+  top_alt_m: 2620
+  base_alt_m: 1750
+  lift_drive_min: 2
+geneva_drive_min: 140
+ratings:
+  ski: 6
+  backcountry: 6
+  summer: 6
+  charm: 5
+  village_life: 4
+  license_risk: 8
+license_notes: >
+  Auto-generated first pass — no Le Meur restrictions researched yet, verify.
+  National registration applies.
+rental:
+  est_weekly_rate_winter_eur: 1300
+  est_weekly_rate_summer_eur: 700
+  est_occupancy_weeks: 13
+  notes: "Purpose-built plateau station. — verify"
+portal_ids: {}
+notes: >
+  AUTO-GENERATED batch entry (2500m+ sweep). INSEE code and ratings need a
+  verification pass. Purpose-built plateau station. — verify
+updated_at: "2026-07-18"

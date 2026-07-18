@@ -1,0 +1,33 @@
+insee_code: "73071"
+name: "Champagny-en-Vanoise"
+department: "73"
+postal_codes: ["73350"]
+lat: 45.4592
+lon: 6.7128
+village_alt_m: 1250
+resort:
+  name: "La Plagne (Champagny gondola)"
+  top_alt_m: 3250
+  base_alt_m: 1250
+  lift_drive_min: 3
+geneva_drive_min: 150
+ratings:
+  ski: 8
+  backcountry: 8
+  summer: 9
+  charm: 8
+  village_life: 5
+  license_risk: 7
+license_notes: >
+  Auto-generated first pass — no Le Meur restrictions researched yet, verify.
+  National registration applies.
+rental:
+  est_weekly_rate_winter_eur: 1800
+  est_weekly_rate_summer_eur: 950
+  est_occupancy_weeks: 15
+  notes: "Vanoise balcony, quiet Plagne backdoor. — verify"
+portal_ids: {}
+notes: >
+  AUTO-GENERATED batch entry (2500m+ sweep). INSEE code and ratings need a
+  verification pass. Vanoise balcony, quiet Plagne backdoor. — verify
+updated_at: "2026-07-18"

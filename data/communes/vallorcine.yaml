@@ -1,0 +1,33 @@
+insee_code: "74290"
+name: "Vallorcine"
+department: "74"
+postal_codes: ["74660"]
+lat: 46.0331
+lon: 6.9331
+village_alt_m: 1260
+resort:
+  name: "Balme/Le Tour + Grands Montets 10min"
+  top_alt_m: 3275
+  base_alt_m: 1260
+  lift_drive_min: 8
+geneva_drive_min: 85
+ratings:
+  ski: 6
+  backcountry: 9
+  summer: 8
+  charm: 8
+  village_life: 4
+  license_risk: 7
+license_notes: >
+  Auto-generated first pass — no Le Meur restrictions researched yet, verify.
+  National registration applies.
+rental:
+  est_weekly_rate_winter_eur: 1500
+  est_weekly_rate_summer_eur: 900
+  est_occupancy_weeks: 13
+  notes: "Border village, Swiss side access. — verify"
+portal_ids: {}
+notes: >
+  AUTO-GENERATED batch entry (2500m+ sweep). INSEE code and ratings need a
+  verification pass. Border village, Swiss side access. — verify
+updated_at: "2026-07-18"

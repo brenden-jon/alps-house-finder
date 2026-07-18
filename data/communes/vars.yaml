@@ -1,0 +1,33 @@
+insee_code: "05177"
+name: "Vars"
+department: "05"
+postal_codes: ["05560"]
+lat: 44.5758
+lon: 6.6842
+village_alt_m: 1650
+resort:
+  name: "Forêt Blanche (2750)"
+  top_alt_m: 2750
+  base_alt_m: 1650
+  lift_drive_min: 3
+geneva_drive_min: 210
+ratings:
+  ski: 7
+  backcountry: 7
+  summer: 7
+  charm: 6
+  village_life: 5
+  license_risk: 7
+license_notes: >
+  Auto-generated first pass — no Le Meur restrictions researched yet, verify.
+  National registration applies.
+rental:
+  est_weekly_rate_winter_eur: 1500
+  est_weekly_rate_summer_eur: 800
+  est_occupancy_weeks: 14
+  notes: "Big south domain w/ Risoul. — verify"
+portal_ids: {}
+notes: >
+  AUTO-GENERATED batch entry (2500m+ sweep). INSEE code and ratings need a
+  verification pass. Big south domain w/ Risoul. — verify
+updated_at: "2026-07-18"

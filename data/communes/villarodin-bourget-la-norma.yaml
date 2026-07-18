@@ -1,0 +1,33 @@
+insee_code: "73322"
+name: "Villarodin-Bourget"
+department: "73"
+postal_codes: ["73500"]
+lat: 45.2158
+lon: 6.7019
+village_alt_m: 1350
+resort:
+  name: "La Norma (2750)"
+  top_alt_m: 2750
+  base_alt_m: 1350
+  lift_drive_min: 5
+geneva_drive_min: 160
+ratings:
+  ski: 6
+  backcountry: 7
+  summer: 7
+  charm: 7
+  village_life: 4
+  license_risk: 8
+license_notes: >
+  Auto-generated first pass — no Le Meur restrictions researched yet, verify.
+  National registration applies.
+rental:
+  est_weekly_rate_winter_eur: 1200
+  est_weekly_rate_summer_eur: 700
+  est_occupancy_weeks: 12
+  notes: "Car-free family station. — verify"
+portal_ids: {}
+notes: >
+  AUTO-GENERATED batch entry (2500m+ sweep). INSEE code and ratings need a
+  verification pass. Car-free family station. — verify
+updated_at: "2026-07-18"

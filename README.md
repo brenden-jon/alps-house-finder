@@ -45,6 +45,18 @@ ski_access, altitude_security (2700m+ = climate-safe), backcountry, summer, char
 village_life, geneva_access, license_safety, rental_yield, price_value (vs DVF),
 space_fit, condition (DPE; G = rental ban). Hard filters: all-in ≤€900k, bedrooms ≥3.
 
+## Financial model
+
+The dashboard computes a per-listing buy-to-let case client-side
+(`web/src/lib/scoring.ts`, `FINANCE` constants): 70% LTV French mortgage at
+3.4% fixed over 20 years, 7.5% notary fees, revenue from measured Airbnb
+medians (fallback: curated seeds) discounted by license risk, minus 22%
+management/platform costs and 1.2%/yr fixed costs. Outputs: annual cashflow,
+cash-in (equity + notary), and return on equity including year-1 amortization.
+Sort by "Economic case" or filter to cashflow-positive listings. Estimates for
+comparison between listings — not financial advice; tune the constants to your
+actual mortgage offer.
+
 ## ToS note
 
 Personal, non-commercial use: low request rates, caching, always linking back to

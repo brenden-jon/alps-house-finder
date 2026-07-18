@@ -1,12 +1,14 @@
 'use client';
 
 import { fmtEur } from '@/lib/data';
+import type { FinanceResult } from '@/lib/scoring';
 import type { Listing } from '@/lib/types';
 
 export function ListingCard({
   listing: l,
   rank,
   score,
+  finance,
   communeName,
   starred,
   onOpen,
@@ -16,6 +18,7 @@ export function ListingCard({
   listing: Listing;
   rank: number;
   score: number;
+  finance?: FinanceResult;
   communeName: string;
   starred: boolean;
   onOpen: () => void;
@@ -66,6 +69,19 @@ export function ListingCard({
           {l.dpe && <span>DPE {l.dpe}</span>}
           {l.land ? <span>{Math.round(l.land)} m² land</span> : null}
         </div>
+        {finance && (
+          <div
+            className="facts"
+            title={`Equity in: ${fmtEur(Math.round(finance.equity))} · gross rent ~${fmtEur(Math.round(finance.grossRevenue))}/yr · mortgage ${fmtEur(Math.round(finance.debtService))}/yr · return on equity incl. amortization ${(finance.roe * 100).toFixed(1)}%`}
+          >
+            <span style={{ color: finance.cashflow >= 0 ? 'var(--good-text)' : 'var(--critical)' }}>
+              {finance.cashflow >= 0 ? '+' : '−'}
+              {fmtEur(Math.abs(Math.round(finance.cashflow)))}/yr cashflow
+            </span>
+            <span>RoE {(finance.roe * 100).toFixed(1)}%</span>
+            <span>{fmtEur(Math.round(finance.equity))} cash in</span>
+          </div>
+        )}
         <div className="flags">
           {isNew && <span className="badge drop">new</span>}
           {priceDropped && <span className="badge drop">price ↓</span>}

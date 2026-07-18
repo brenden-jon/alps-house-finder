@@ -1,0 +1,33 @@
+insee_code: "74085"
+name: "Les Contamines-Montjoie"
+department: "74"
+postal_codes: ["74170"]
+lat: 45.8221
+lon: 6.7276
+village_alt_m: 1164
+resort:
+  name: "Les Contamines-Hauteluce (Aiguille Croche 2487)"
+  top_alt_m: 2487
+  base_alt_m: 1164
+  lift_drive_min: 3
+geneva_drive_min: 80
+ratings:
+  ski: 7
+  backcountry: 9
+  summer: 9
+  charm: 8
+  village_life: 6
+  license_risk: 6
+license_notes: >
+  Auto-generated first pass — no Le Meur restrictions researched yet, verify.
+  National registration applies.
+rental:
+  est_weekly_rate_winter_eur: 1900
+  est_weekly_rate_summer_eur: 1100
+  est_occupancy_weeks: 15
+  notes: "High north-facing bowl, authentic village. — verify"
+portal_ids: {}
+notes: >
+  AUTO-GENERATED batch entry (2500m+ sweep). INSEE code and ratings need a
+  verification pass. High north-facing bowl, authentic village. — verify
+updated_at: "2026-07-18"

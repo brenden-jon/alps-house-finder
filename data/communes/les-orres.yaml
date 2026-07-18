@@ -1,0 +1,33 @@
+insee_code: "05098"
+name: "Les Orres"
+department: "05"
+postal_codes: ["05200"]
+lat: 44.5083
+lon: 6.5539
+village_alt_m: 1550
+resort:
+  name: "Les Orres (2720)"
+  top_alt_m: 2720
+  base_alt_m: 1550
+  lift_drive_min: 3
+geneva_drive_min: 200
+ratings:
+  ski: 7
+  backcountry: 6
+  summer: 7
+  charm: 5
+  village_life: 4
+  license_risk: 8
+license_notes: >
+  Auto-generated first pass — no Le Meur restrictions researched yet, verify.
+  National registration applies.
+rental:
+  est_weekly_rate_winter_eur: 1300
+  est_weekly_rate_summer_eur: 700
+  est_occupancy_weeks: 13
+  notes: "Serre-Ponçon lake views. — verify"
+portal_ids: {}
+notes: >
+  AUTO-GENERATED batch entry (2500m+ sweep). INSEE code and ratings need a
+  verification pass. Serre-Ponçon lake views. — verify
+updated_at: "2026-07-18"

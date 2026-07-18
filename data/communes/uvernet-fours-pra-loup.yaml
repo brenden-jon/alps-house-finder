@@ -1,0 +1,33 @@
+insee_code: "04226"
+name: "Uvernet-Fours"
+department: "04"
+postal_codes: ["04400"]
+lat: 44.3644
+lon: 6.6103
+village_alt_m: 1600
+resort:
+  name: "Espace Lumière (2600)"
+  top_alt_m: 2600
+  base_alt_m: 1600
+  lift_drive_min: 3
+geneva_drive_min: 220
+ratings:
+  ski: 7
+  backcountry: 7
+  summer: 7
+  charm: 5
+  village_life: 4
+  license_risk: 8
+license_notes: >
+  Auto-generated first pass — no Le Meur restrictions researched yet, verify.
+  National registration applies.
+rental:
+  est_weekly_rate_winter_eur: 1400
+  est_weekly_rate_summer_eur: 750
+  est_occupancy_weeks: 13
+  notes: "Pra Loup 1600/1500. — verify"
+portal_ids: {}
+notes: >
+  AUTO-GENERATED batch entry (2500m+ sweep). INSEE code and ratings need a
+  verification pass. Pra Loup 1600/1500. — verify
+updated_at: "2026-07-18"

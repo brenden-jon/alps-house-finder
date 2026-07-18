@@ -1,0 +1,33 @@
+insee_code: "73023"
+name: "Aussois"
+department: "73"
+postal_codes: ["73500"]
+lat: 45.2278
+lon: 6.7414
+village_alt_m: 1500
+resort:
+  name: "Aussois (2750)"
+  top_alt_m: 2750
+  base_alt_m: 1500
+  lift_drive_min: 3
+geneva_drive_min: 160
+ratings:
+  ski: 6
+  backcountry: 8
+  summer: 8
+  charm: 8
+  village_life: 6
+  license_risk: 8
+license_notes: >
+  Auto-generated first pass — no Le Meur restrictions researched yet, verify.
+  National registration applies.
+rental:
+  est_weekly_rate_winter_eur: 1300
+  est_weekly_rate_summer_eur: 800
+  est_occupancy_weeks: 13
+  notes: "Fortified village, Vanoise south. — verify"
+portal_ids: {}
+notes: >
+  AUTO-GENERATED batch entry (2500m+ sweep). INSEE code and ratings need a
+  verification pass. Fortified village, Vanoise south. — verify
+updated_at: "2026-07-18"

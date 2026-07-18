@@ -57,6 +57,57 @@ export function totalScore(l: Listing, weights: Record<string, number>): number 
   return wTotal > 0 ? sum / wTotal : 0;
 }
 
+// Financial model ----------------------------------------------------------
+// French buy-to-let assumptions (mid-2026): 70% LTV, ~3.4% fixed over 20 years,
+// ~7.5% notary on existing property. Revenue from measured Airbnb medians when
+// available (else curated seeds), discounted by license risk; 22% of revenue for
+// platform/cleaning/management, 1.2% of price/yr for taxe foncière, insurance,
+// charges and upkeep. A model, not advice — tune the constants here.
+export const FINANCE = {
+  ltv: 0.7,
+  annualRate: 0.034,
+  termYears: 20,
+  notaryPct: 0.075,
+  mgmtPct: 0.22,
+  fixedPctOfPrice: 0.012,
+};
+
+export interface FinanceResult {
+  equity: number; // cash in: 30% of all-in + notary
+  loan: number;
+  debtService: number; // per year
+  grossRevenue: number;
+  netRevenue: number; // after mgmt + fixed costs
+  cashflow: number; // netRevenue - debtService
+  principalYear1: number;
+  roe: number; // (cashflow + principal repaid) / equity
+}
+
+import type { Commune } from './types';
+
+export function computeFinance(l: Listing, c: Commune | null): FinanceResult {
+  const allIn = l.allIn;
+  const loan = FINANCE.ltv * allIn;
+  const equity = allIn - loan + FINANCE.notaryPct * l.price;
+  const r = FINANCE.annualRate / 12;
+  const n = FINANCE.termYears * 12;
+  const monthly = (loan * r) / (1 - Math.pow(1 + r, -n));
+  const debtService = monthly * 12;
+
+  const occ = c?.occupancyWeeks ?? 12;
+  const snap = c?.str?.[0] as { median_nightly_winter_eur?: number; median_nightly_summer_eur?: number } | undefined;
+  const wkWinter = snap?.median_nightly_winter_eur ? snap.median_nightly_winter_eur * 7 : c?.weeklyWinter ?? 1400;
+  const wkSummer = snap?.median_nightly_summer_eur ? snap.median_nightly_summer_eur * 7 : c?.weeklySummer ?? 800;
+  const licenseFactor = Math.min(1, (c?.ratings.licenseRisk ?? 6) / 10 + 0.2);
+  const grossRevenue = (wkWinter * occ * 0.6 + wkSummer * occ * 0.4) * licenseFactor;
+
+  const netRevenue = grossRevenue * (1 - FINANCE.mgmtPct) - FINANCE.fixedPctOfPrice * l.price;
+  const cashflow = netRevenue - debtService;
+  const principalYear1 = debtService - loan * FINANCE.annualRate;
+  const roe = equity > 0 ? (cashflow + principalYear1) / equity : 0;
+  return { equity, loan, debtService, grossRevenue, netRevenue, cashflow, principalYear1, roe };
+}
+
 // localStorage persistence -------------------------------------------------
 
 const safeGet = (key: string): string | null =>

@@ -211,6 +211,33 @@ button {
   color: #fff;
 }
 
+.sort-bar {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  flex-wrap: wrap;
+  margin-bottom: 12px;
+  font-size: 13px;
+  color: var(--text-secondary);
+}
+.sort-bar select {
+  padding: 4px 8px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: var(--surface-1);
+  color: var(--text-primary);
+  font: inherit;
+}
+.sort-bar .check {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.sort-bar .model-note {
+  color: var(--text-muted);
+  font-size: 11.5px;
+}
+
 .cards {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));

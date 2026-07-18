@@ -1,0 +1,33 @@
+insee_code: "05110"
+name: "Puy-Saint-Vincent"
+department: "05"
+postal_codes: ["05290"]
+lat: 44.8283
+lon: 6.4831
+village_alt_m: 1400
+resort:
+  name: "Puy-Saint-Vincent (2700)"
+  top_alt_m: 2700
+  base_alt_m: 1400
+  lift_drive_min: 2
+geneva_drive_min: 215
+ratings:
+  ski: 7
+  backcountry: 8
+  summer: 8
+  charm: 6
+  village_life: 4
+  license_risk: 8
+license_notes: >
+  Auto-generated first pass — no Le Meur restrictions researched yet, verify.
+  National registration applies.
+rental:
+  est_weekly_rate_winter_eur: 1400
+  est_weekly_rate_summer_eur: 800
+  est_occupancy_weeks: 13
+  notes: "North-facing snow-sure family hill. — verify"
+portal_ids: {}
+notes: >
+  AUTO-GENERATED batch entry (2500m+ sweep). INSEE code and ratings need a
+  verification pass. North-facing snow-sure family hill. — verify
+updated_at: "2026-07-18"

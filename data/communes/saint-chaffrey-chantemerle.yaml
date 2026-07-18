@@ -1,0 +1,33 @@
+insee_code: "05133"
+name: "Saint-Chaffrey"
+department: "05"
+postal_codes: ["05330"]
+lat: 44.9236
+lon: 6.6072
+village_alt_m: 1350
+resort:
+  name: "Serre Chevalier"
+  top_alt_m: 2800
+  base_alt_m: 1350
+  lift_drive_min: 2
+geneva_drive_min: 190
+ratings:
+  ski: 8
+  backcountry: 8
+  summer: 8
+  charm: 7
+  village_life: 6
+  license_risk: 7
+license_notes: >
+  Auto-generated first pass — no Le Meur restrictions researched yet, verify.
+  National registration applies.
+rental:
+  est_weekly_rate_winter_eur: 1600
+  est_weekly_rate_summer_eur: 900
+  est_occupancy_weeks: 15
+  notes: "Core SC access. — verify"
+portal_ids: {}
+notes: >
+  AUTO-GENERATED batch entry (2500m+ sweep). INSEE code and ratings need a
+  verification pass. Core SC access. — verify
+updated_at: "2026-07-18"

@@ -1,0 +1,33 @@
+insee_code: "74160"
+name: "Manigod"
+department: "74"
+postal_codes: ["74230"]
+lat: 45.8697
+lon: 6.3742
+village_alt_m: 950
+resort:
+  name: "La Clusaz-Manigod (Balme 2477 via domain)"
+  top_alt_m: 2477
+  base_alt_m: 1450
+  lift_drive_min: 8
+geneva_drive_min: 60
+ratings:
+  ski: 7
+  backcountry: 7
+  summer: 8
+  charm: 9
+  village_life: 6
+  license_risk: 7
+license_notes: >
+  Auto-generated first pass — no Le Meur restrictions researched yet, verify.
+  National registration applies.
+rental:
+  est_weekly_rate_winter_eur: 1500
+  est_weekly_rate_summer_eur: 900
+  est_occupancy_weeks: 14
+  notes: "Cheaper Clusaz backdoor, Col de la Croix Fry. — verify"
+portal_ids: {}
+notes: >
+  AUTO-GENERATED batch entry (2500m+ sweep). INSEE code and ratings need a
+  verification pass. Cheaper Clusaz backdoor, Col de la Croix Fry. — verify
+updated_at: "2026-07-18"

@@ -1,0 +1,33 @@
+insee_code: "73285"
+name: "Séez"
+department: "73"
+postal_codes: ["73700"]
+lat: 45.6236
+lon: 6.8006
+village_alt_m: 904
+resort:
+  name: "La Rosière lifts 10min"
+  top_alt_m: 2800
+  base_alt_m: 904
+  lift_drive_min: 10
+geneva_drive_min: 140
+ratings:
+  ski: 6
+  backcountry: 7
+  summer: 7
+  charm: 7
+  village_life: 6
+  license_risk: 7
+license_notes: >
+  Auto-generated first pass — no Le Meur restrictions researched yet, verify.
+  National registration applies.
+rental:
+  est_weekly_rate_winter_eur: 1200
+  est_weekly_rate_summer_eur: 800
+  est_occupancy_weeks: 13
+  notes: "Baroque village below La Rosière. — verify"
+portal_ids: {}
+notes: >
+  AUTO-GENERATED batch entry (2500m+ sweep). INSEE code and ratings need a
+  verification pass. Baroque village below La Rosière. — verify
+updated_at: "2026-07-18"

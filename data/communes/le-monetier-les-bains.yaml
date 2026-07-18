@@ -1,0 +1,33 @@
+insee_code: "05079"
+name: "Le Monêtier-les-Bains"
+department: "05"
+postal_codes: ["05220"]
+lat: 44.9758
+lon: 6.5089
+village_alt_m: 1500
+resort:
+  name: "Serre Chevalier"
+  top_alt_m: 2800
+  base_alt_m: 1500
+  lift_drive_min: 3
+geneva_drive_min: 195
+ratings:
+  ski: 8
+  backcountry: 9
+  summer: 8
+  charm: 9
+  village_life: 6
+  license_risk: 7
+license_notes: >
+  Auto-generated first pass — no Le Meur restrictions researched yet, verify.
+  National registration applies.
+rental:
+  est_weekly_rate_winter_eur: 1800
+  est_weekly_rate_summer_eur: 1000
+  est_occupancy_weeks: 15
+  notes: "Thermal baths + prettiest SC village. — verify"
+portal_ids: {}
+notes: >
+  AUTO-GENERATED batch entry (2500m+ sweep). INSEE code and ratings need a
+  verification pass. Thermal baths + prettiest SC village. — verify
+updated_at: "2026-07-18"
