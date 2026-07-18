@@ -112,10 +112,19 @@ def _score_listing(conn, l: dict, c: dict | None) -> dict:
         scores["license_safety"] = ((c.get("rating_license_risk") or 6) / 10,
                                     (c.get("license_notes") or "").strip()[:200] or "No notes")
 
-        # rental yield: gross annual revenue estimate / all-in price
+        # rental yield: gross annual revenue estimate / all-in price.
+        # Prefer measured Airbnb medians (str_snapshots) over YAML seeds.
         occ = c.get("est_occupancy_weeks") or 12
-        winter = (c.get("est_weekly_rate_winter_eur") or 1500) * occ * 0.6
-        summer_rev = (c.get("est_weekly_rate_summer_eur") or 800) * occ * 0.4
+        snap = conn.execute(
+            "SELECT * FROM str_snapshots WHERE commune_insee=? ORDER BY snapshot_date DESC LIMIT 1",
+            (c["insee_code"],),
+        ).fetchone()
+        wk_winter = (snap["median_nightly_winter_eur"] * 7 if snap and snap["median_nightly_winter_eur"]
+                     else c.get("est_weekly_rate_winter_eur") or 1500)
+        wk_summer = (snap["median_nightly_summer_eur"] * 7 if snap and snap["median_nightly_summer_eur"]
+                     else c.get("est_weekly_rate_summer_eur") or 800)
+        winter = wk_winter * occ * 0.6
+        summer_rev = wk_summer * occ * 0.4
         # discount rental income by license risk (can't rent without a license)
         license_factor = min(1.0, ((c.get("rating_license_risk") or 6) / 10) + 0.2)
         revenue = (winter + summer_rev) * license_factor
@@ -123,7 +132,8 @@ def _score_listing(conn, l: dict, c: dict | None) -> dict:
         scores["rental_yield"] = (
             _interp(yield_pct, [(1, 0.05), (2, 0.2), (4, 0.6), (6, 1.0)]),
             f"~€{int(revenue):,}/yr est. gross ÷ €{all_in:,} all-in ≈ {yield_pct:.1f}% "
-            f"(license factor {license_factor:.1f})",
+            f"(license factor {license_factor:.1f}"
+            + (", Airbnb-measured rates" if snap else ", seeded rates") + ")",
         )
 
     # price value vs DVF official median

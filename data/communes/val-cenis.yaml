@@ -1,0 +1,36 @@
+insee_code: "73290"
+name: "Val-Cenis"
+department: "73"
+postal_codes: ["73480", "73500"]
+lat: 45.2847
+lon: 6.9023
+village_alt_m: 1400
+resort:
+  name: "Val Cenis (Lanslebourg/Lanslevillard, Haute Maurienne)"
+  top_alt_m: 2800
+  base_alt_m: 1300
+  lift_drive_min: 3
+  slope_access_notes: >
+    Lifts from Lanslebourg and Lanslevillard village centers; top 2800m,
+    north-facing, snow-sure. 125km of pistes, uncrowded vs Tarentaise.
+geneva_drive_min: 170
+ratings:
+  ski: 7          # solid high domain, cheap forfaits, no mega-resort glitz
+  backcountry: 9  # Haute Maurienne/Vanoise giants; friend: très bon rando
+  summer: 8       # Vanoise NP, Mont-Cenis lake, cycling cols; friend: marché+festivals
+  charm: 8        # real Maurienne villages with baroque churches
+  village_life: 7 # year-round valley life, market; friend: marché, festivals
+  license_risk: 8 # no restrictions known — verify
+license_notes: >
+  No Le Meur restrictions identified as of mid-2026 — verify quarterly.
+  National registration applies.
+rental:
+  est_weekly_rate_winter_eur: 1400
+  est_weekly_rate_summer_eur: 800
+  est_occupancy_weeks: 14
+  notes: "Friend: bon, clientèle fidèle 75%. Cheaper entry prices than Tarentaise. — verify"
+portal_ids: {}
+notes: >
+  From friend's framework (climat: bonne, 2800m). Train: TGV/Modane ~25min then
+  bus. Drive Geneva ~2h50 — outside the 2h ring, scored accordingly.
+updated_at: "2026-07-18"

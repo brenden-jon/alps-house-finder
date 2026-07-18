@@ -1,0 +1,34 @@
+insee_code: "05101"
+name: "Vallouise-Pelvoux"
+department: "05"
+postal_codes: ["05340", "05290"]
+lat: 44.8461
+lon: 6.4872
+village_alt_m: 1160
+resort:
+  name: "Pelvoux-Vallouise + Puy-Saint-Vincent 10min (top 2700m)"
+  top_alt_m: 2700
+  base_alt_m: 1250
+  lift_drive_min: 10
+  slope_access_notes: >
+    Small local area at Pelvoux; Puy-Saint-Vincent (top 2700m, snow-sure
+    north-facing) 10min drive. Écrins NP doorstep.
+geneva_drive_min: 220
+ratings:
+  ski: 6          # PSV is underrated family freeride hill
+  backcountry: 9  # Écrins: Pelvoux, Ailefroide climbing/touring mecca
+  summer: 9       # friend: vivant l'été; Ailefroide camping/alpinism hub
+  charm: 8        # real Vallouise stone villages
+  village_life: 6 # year-round valley, Briançon 25min; friend: vivant l'été
+  license_risk: 8 # no restrictions known — verify
+license_notes: >
+  No Le Meur restrictions identified as of mid-2026 — verify quarterly.
+rental:
+  est_weekly_rate_winter_eur: 1200
+  est_weekly_rate_summer_eur: 900
+  est_occupancy_weeks: 13
+  notes: "Friend: rentabilité bonne. Dual season via alpinism summer trade."
+portal_ids: {}
+notes: >
+  From friend's framework. ~3h40 Geneva, Turin 2h, Briançon TGV-bus.
+updated_at: "2026-07-18"

@@ -1,0 +1,35 @@
+insee_code: "73047"
+name: "Bonneval-sur-Arc"
+department: "73"
+postal_codes: ["73480"]
+lat: 45.3722
+lon: 7.0464
+village_alt_m: 1800
+resort:
+  name: "Bonneval-sur-Arc"
+  top_alt_m: 3000
+  base_alt_m: 1800
+  lift_drive_min: 3
+  slope_access_notes: >
+    Small high-altitude area (top 3000m) above one of France's highest villages;
+    snow-sure village-level skiing. Linked culture with Val Cenis 15min away.
+geneva_drive_min: 185
+ratings:
+  ski: 6          # small area, but highest village skiing in the Alps region
+  backcountry: 10 # legendary: Albaron, Ciamarella, Evettes glacier tours
+  summer: 9       # Vanoise NP, classified "plus beau village de France"
+  charm: 10       # perfectly preserved stone village, zero modern buildings
+  village_life: 5 # ~250 residents; alive but tiny; friend: marché, festivals
+  license_risk: 8 # no restrictions known — verify; strict building/PLU rules though
+license_notes: >
+  No Le Meur restrictions identified as of mid-2026 — verify quarterly. NB: very
+  strict heritage/building rules limit renovation options; inventory is scarce.
+rental:
+  est_weekly_rate_winter_eur: 1500
+  est_weekly_rate_summer_eur: 900
+  est_occupancy_weeks: 14
+  notes: "Scarce inventory, loyal clientele. — verify"
+portal_ids: {}
+notes: >
+  From friend's framework (2800-3000m, climat bonne). ~3h from Geneva.
+updated_at: "2026-07-18"

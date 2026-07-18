@@ -103,6 +103,18 @@ def rank_cmd(top):
     conn.close()
 
 
+@main.command("str-snapshot")
+def str_snapshot_cmd():
+    """Snapshot Airbnb market evidence (count + median nightly rates) per commune."""
+    from . import str_market
+
+    conn = dbmod.connect()
+    communes = [dict(r) for r in conn.execute("SELECT * FROM communes")]
+    n = str_market.snapshot_all(conn, communes)
+    conn.close()
+    click.echo(f"Snapshotted STR market for {n} communes")
+
+
 @main.command("export")
 def export_cmd():
     """Export listings/communes/meta JSON for the static dashboard."""
@@ -115,11 +127,14 @@ def export_cmd():
 
 
 @main.command("refresh")
-def refresh_cmd():
+@click.option("--with-str", is_flag=True, help="Also refresh Airbnb STR snapshots (quarterly is enough)")
+def refresh_cmd(with_str):
     """Full pipeline: scrape all sources, update trends, score, export."""
     ctx = click.get_current_context()
     ctx.invoke(scrape_cmd, source_codes=(), commune_slugs=())
     ctx.invoke(trends_cmd)
+    if with_str:
+        ctx.invoke(str_snapshot_cmd)
     ctx.invoke(score_cmd)
     ctx.invoke(export_cmd)
 

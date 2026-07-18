@@ -1,0 +1,37 @@
+insee_code: "73132"
+name: "Hauteluce"
+department: "73"
+postal_codes: ["73620"]
+lat: 45.7549
+lon: 6.5855
+village_alt_m: 1150
+resort:
+  name: "Les Saisies / Espace Diamant (+ Contamines side)"
+  top_alt_m: 2069
+  base_alt_m: 1150
+  lift_drive_min: 10
+  slope_access_notes: >
+    Between Les Saisies (Espace Diamant, top 2069m) and the Contamines-Hauteluce
+    domain (Aiguille Croche ~2487m via Col du Joly side). Beaufortain baroque
+    village; ski access by short drive/navette either way.
+geneva_drive_min: 95
+ratings:
+  ski: 6          # two mid-size domains nearby, modest altitude on Saisies side
+  backcountry: 8  # Beaufortain is a top ski-touring range (friend's framework: très bon)
+  summer: 9       # Beaufortain pastures, Lac de la Girotte, Col du Joly
+  charm: 9        # intact baroque village, strong identity (friend: identité forte)
+  village_life: 6 # small but real Beaufortain community; Beaufort 15min
+  license_risk: 8 # small Savoie commune, no restrictions known — verify
+license_notes: >
+  No Le Meur restrictions identified as of mid-2026 — verify quarterly.
+  National registration applies.
+rental:
+  est_weekly_rate_winter_eur: 1500
+  est_weekly_rate_summer_eur: 900
+  est_occupancy_weeks: 13
+  notes: "Friend's framework: rentabilité modérée. Quieter market than Haute-Savoie. — verify"
+portal_ids: {}
+notes: >
+  From friend's framework. Train: Albertville TGV ~35min. Climate: Saisies side
+  low (2069m) but Contamines side reaches ~2500m.
+updated_at: "2026-07-18"

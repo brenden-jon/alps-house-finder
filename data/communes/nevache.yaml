@@ -1,0 +1,36 @@
+insee_code: "05093"
+name: "Névache"
+department: "05"
+postal_codes: ["05100"]
+lat: 45.0222
+lon: 6.6136
+village_alt_m: 1600
+resort:
+  name: "Névache nordic / Montgenèvre 25min (top 2700m)"
+  top_alt_m: 2700
+  base_alt_m: 1860
+  lift_drive_min: 25
+  slope_access_notes: >
+    Clarée valley: nordic/touring paradise, tiny local drag lifts only. Alpine
+    skiing at Montgenèvre (2700m) 25min or Serre Chevalier 30min.
+geneva_drive_min: 210
+ratings:
+  ski: 4          # no significant alpine lifts in-valley
+  backcountry: 10 # Clarée = one of the great French touring valleys; friend: excellent
+  summer: 10      # friend: très riche; classified valley, superb hiking
+  charm: 9
+  village_life: 5 # small; Briançon 30min
+  license_risk: 8 # no restrictions known — verify; Clarée is a protected site
+license_notes: >
+  No Le Meur restrictions identified as of mid-2026 — verify quarterly.
+  Classified site rules restrict construction.
+rental:
+  est_weekly_rate_winter_eur: 1100
+  est_weekly_rate_summer_eur: 900
+  est_occupancy_weeks: 12
+  notes: "Friend: rentabilité faible. Touring/summer niche, no piste-holiday market."
+portal_ids: {}
+notes: >
+  From friend's framework. Train: Paris night train to Briançon (11-12h).
+  3h30 from Geneva; Turin 1h45.
+updated_at: "2026-07-18"

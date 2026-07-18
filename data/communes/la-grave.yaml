@@ -1,0 +1,35 @@
+insee_code: "05063"
+name: "La Grave"
+department: "05"
+postal_codes: ["05320"]
+lat: 45.0458
+lon: 6.3072
+village_alt_m: 1480
+resort:
+  name: "La Grave-La Meije (téléphérique 3200m+glacier 3550m)"
+  top_alt_m: 3550
+  base_alt_m: 1480
+  lift_drive_min: 2
+  slope_access_notes: >
+    One cable car, no pistes: world-famous 2000m+ freeride/glacier terrain off
+    La Meije. Not a family piste resort. Chazelet beginner hill nearby.
+geneva_drive_min: 175
+ratings:
+  ski: 7          # unique but niche: freeride only; friend rates excellent for its type
+  backcountry: 10 # iconic (vallons de la Meije, Girose); friend: excellent
+  summer: 9       # Meije views, alpinism, Emparis plateau; climat très bonne
+  charm: 9        # unspoiled stone village facing the glacier
+  village_life: 5 # alternative/mountain-bum community; friend: alternatif
+  license_risk: 8 # no restrictions known — verify
+license_notes: >
+  No Le Meur restrictions identified as of mid-2026 — verify quarterly.
+rental:
+  est_weekly_rate_winter_eur: 1300
+  est_weekly_rate_summer_eur: 900
+  est_occupancy_weeks: 12
+  notes: "Friend: rentabilité faible, niche freeride/alpinist clientele."
+portal_ids: {}
+notes: >
+  From friend's framework. Climate-safest terrain on the list (3550m glacier).
+  ~2h55 Geneva via Grenoble; Grenoble 1h20.
+updated_at: "2026-07-18"
