@@ -15,6 +15,7 @@ __pycache__/
 node_modules/
 web/.next/
 web/out/
+web/public/data/
 
 # OS
 .DS_Store

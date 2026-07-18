@@ -103,5 +103,26 @@ def rank_cmd(top):
     conn.close()
 
 
+@main.command("export")
+def export_cmd():
+    """Export listings/communes/meta JSON for the static dashboard."""
+    from .export import export_all
+
+    conn = dbmod.connect()
+    path = export_all(conn)
+    conn.close()
+    click.echo(f"Exported to {path}")
+
+
+@main.command("refresh")
+def refresh_cmd():
+    """Full pipeline: scrape all sources, update trends, score, export."""
+    ctx = click.get_current_context()
+    ctx.invoke(scrape_cmd, source_codes=(), commune_slugs=())
+    ctx.invoke(trends_cmd)
+    ctx.invoke(score_cmd)
+    ctx.invoke(export_cmd)
+
+
 if __name__ == "__main__":
     main()
