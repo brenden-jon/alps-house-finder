@@ -1,0 +1,39 @@
+insee_code: "73034"
+name: "Beaufort"
+slug: areches-beaufort
+department: "73"
+postal_codes: ["73270"]
+lat: 45.6650
+lon: 6.5670
+village_alt_m: 1080
+resort:
+  name: "Arêches-Beaufort (Grand Mont)"
+  top_alt_m: 2320
+  base_alt_m: 1080
+  lift_drive_min: 3
+  slope_access_notes: >
+    Lifts from Arêches hamlet (1080m) up to ~2320m; small confidential domain
+    (~50km) but real freeride reputation (Grand Mont). Below the 2500m climate
+    bar — north-facing sectors hold snow; added at user request (friend's pick).
+geneva_drive_min: 105
+ratings:
+  ski: 6          # small but high-quality, uncrowded; Grand Mont freeride
+  backcountry: 9  # Beaufortain = touring mecca; Pierra Menta race home
+  summer: 9       # Roselend lake, GR5, working alpages, Beaufort cheese country
+  charm: 9        # genuinely working dairy village, zero purpose-built feel
+  village_life: 8 # Beaufort bourg has year-round shops/school/coop fromagère
+  license_risk: 7 # small Savoie commune, no restrictions known — verify
+license_notes: >
+  No Le Meur restrictions identified as of mid-2026 — verify quarterly.
+  National registration applies.
+rental:
+  est_weekly_rate_winter_eur: 1400
+  est_weekly_rate_summer_eur: 900
+  est_occupancy_weeks: 14
+  notes: "Loyal FR/CH family clientele; modest ADR but authentic-village premium. — verify"
+portal_ids: {}
+notes: >
+  User-requested addition (friend framework: 'identité forte, très bon rando').
+  Below 2500m threshold — altitude_security scores low by design; Hauteluce/
+  Les Saisies lifts ~20min for bad-snow backup.
+updated_at: "2026-07-19"
