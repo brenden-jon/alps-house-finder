@@ -50,7 +50,7 @@ def scrape_cmd(source_codes, commune_slugs):
     for code in codes:
         adapter = get_adapter(code)
         click.echo(f"Scraping {adapter.name} for {len(communes)} communes...")
-        result = run_scrape(conn, adapter, communes)
+        result = run_scrape(conn, adapter, communes, full_run=not commune_slugs)
         click.echo(
             f"  {code}: {result['status']} — seen {result['seen']}, new {result['new']}, "
             f"price-updates {result['updated']}, gone {result['gone']}"

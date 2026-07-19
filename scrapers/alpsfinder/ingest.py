@@ -30,7 +30,8 @@ def get_or_create_source(conn: sqlite3.Connection, adapter) -> int:
     return cur.lastrowid
 
 
-def run_scrape(conn: sqlite3.Connection, adapter, communes: list[dict]) -> dict:
+def run_scrape(conn: sqlite3.Connection, adapter, communes: list[dict],
+               full_run: bool = True) -> dict:
     source_id = get_or_create_source(conn, adapter)
     matcher = CommuneMatcher(conn)
     started = now_iso()
@@ -52,7 +53,10 @@ def run_scrape(conn: sqlite3.Connection, adapter, communes: list[dict]) -> dict:
             if stats["seen"] % 50 == 0:
                 conn.commit()
         conn.commit()
-        stats["gone"] = _mark_gone(conn, source_id, seen_external_ids)
+        # seen/gone only makes sense when the run covered every commune —
+        # a --commune subset run would wrongly "miss" everything else
+        if full_run:
+            stats["gone"] = _mark_gone(conn, source_id, seen_external_ids)
     except BotBlocked as e:
         status, error = "error", str(e)
     except Exception as e:  # noqa: BLE001 — record and continue other sources

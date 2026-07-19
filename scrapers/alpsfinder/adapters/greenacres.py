@@ -101,6 +101,14 @@ class GreenAcresAdapter(SourceAdapter):
             loc_el = card.select_one(".announce-localisation")
             loc = loc_el.get_text(strip=True) if loc_el else ""
             commune_name = loc.split("(")[0].strip() or commune["name"]
+            # Slug resolution can land on a homonym commune in another region
+            # (e.g. Beaufort 73 vs Beaufort 39). Keep only ads whose displayed
+            # location mentions our commune or our department number.
+            from ..communes import norm_name
+            dept_ok = f"({commune['department']}" in loc.replace(" ", "")
+            name_ok = norm_name(commune["name"]) in norm_name(loc) if loc else False
+            if loc and not (dept_ok or name_ok):
+                continue
 
             desc_el = card.select_one(".description-details")
             description = desc_el.get_text(" ", strip=True) if desc_el else None
